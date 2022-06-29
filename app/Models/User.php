@@ -45,6 +45,6 @@ class User extends \TCG\Voyager\Models\User
 
     public function scopeCurrenteUser($query)
     {
-        //return $query->where('id', Auth::user()->id);
+        return $query->where('id', Auth::user()->id);
     }
 }
